@@ -1,0 +1,22 @@
+Run Compile.sh
+
+This will compile all the source files and run the map reduce job
+considering logparse.txt as the input source file and the
+output is written in /user/shrikar/logparse/*.
+
+This program is far from being efficient. I has fiddled around with cores
+and segmentation faults.. Facing InvalidExceptions to this extent for the first time :(
+
+
+If there is only one entry for the corresponding entry and he hasnt performed that
+operation for the second time the entry would be displayed as -999999999 to signify
+he has done operation only once.
+
+In the code LogParse.java relates to the code where we identify set depending on the event, user
+and the timestamp.
+
+LogParseAll handles the scenario where the key the user and value is the timestamp.
+In this case we dont consider about the event type .
+
+Thanks,
+Shrikar
